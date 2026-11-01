@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mem20.org has moved to mem20.com</title>
+<link rel="canonical" href="https://mem20.com/">
+<meta name="robots" content="noindex,follow">
+<noscript><meta http-equiv="refresh" content="0; url=https://mem20.com/"></noscript>
+<script>
+/* Deep paths on mem20.org are not mirrored 1:1; send them to the real site
+   root so nothing 404s. Same repo/behaviour as index.html. */
+(function () {
+  var target = "https://mem20.com" + location.pathname + location.search + location.hash;
+  var c = document.querySelector('link[rel="canonical"]');
+  if (c) c.href = target;
+  location.replace(target);
+})();
+</script>
+</head>
+<body>
+  <main style="font:16px/1.6 -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;padding:24px">
+    <h1>mem20.org has moved</h1>
+    <p>The canonical location is <a href="https://mem20.com/">mem20.com</a>.</p>
+  </main>
+</body>
+</html>
